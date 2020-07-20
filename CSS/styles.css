@@ -1,0 +1,31 @@
+
+.contenedor {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.site-header.inicio {
+    background: url(../img/header.jpg);
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    min-height: 600px;
+}
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.navegacion a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.navegacion a:last-of-type {
+    margin-right: 0px;
+}
