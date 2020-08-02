@@ -67,6 +67,10 @@ img {
     display: block!important;
 }
 
+.contenido-centrado {
+    max-width: 80rem;
+}
+
 /** Botones **/
 .boton {
     color: white;
@@ -150,13 +154,17 @@ img {
 .contenedor-anuncios {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .anuncio {
-    flex-basis: calc(33.3% - 1rem);
+    flex: 0 0 calc(33.3% - 1rem);
     border: 1px solid #b5b5b5;
     background-color: #F5F5F5;
+    margin-bottom: 2rem;
 }
+
+
 
 .contenido-anuncio {
     padding: 2rem;
@@ -201,6 +209,8 @@ img {
     padding: 0;
     display: flex;
     justify-content: space-evenly;
+    max-width: 50rem;
+    flex: 1;
 }
 
 .iconos-caracteristicas li {
@@ -330,4 +340,11 @@ img {
     font-size: 2rem;
     margin: 0;
     padding: 1rem 0 3rem 0;
+}
+
+/** Anuncio **/
+
+.resumen-propiedad {
+    display: flex;
+    justify-content: space-between;
 }
