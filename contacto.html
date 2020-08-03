@@ -1,11 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bienes Raices</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/normalize.css">
+    <link rel="stylesheet" href="CSS/styles.css">
 </head>
 <body>
-    
+    <header class="site-header">
+
+        <div class="contenedor contenido-header">
+            <div class="barra">
+                <a href="/"><img src="img/logo.svg" alt="Logotipo"></a>
+                <img src="img/" alt="">
+                <nav class="navegacion">
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="anuncios.html">Anuncios</a>
+                    <a href="blog.html">Blog</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <h1 class="centrar-texto fw-300">Contacto</h1>
+    <img src="img/destacada3.jpg" alt="">
+
+    <main class="seccion contenido-centrado contenedor">
+        <h2 class="fw-300 contenido-centrado">Formulario Contacto</h2>
+        <form action="">
+
+            <fieldset>
+                <legend>Informacion Personal</legend>
+                <label for=""nombre>Nombre </label>
+                <input type="text" id="nombre" placeholder="Tu Nombre">
+
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="ejemplo@decorreo.com" required>
+
+                <label for="telfono">Teléfono</label>
+                <input type="tel" id="telefono">
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="" id="mensaje"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informacion sobre la propiedad</legend>
+                <label for="opciones">Vende o Compra</label>
+                <select id="opciones">
+                    <option value="" selected disabled>-- Seleccione --</option>
+                    <option value="">Compra</option>
+                    <option value="">Venta</option>
+                </select>
+                <label for="cantidad">Presupuesto</label>
+                <input type="number" min=0>
+            </fieldset>
+
+            <fieldset>
+                <legend>Contacto</legend>
+                <p>Como dese ser contactado</p>
+
+                <div class="forma-contacto">
+                    <label for="tele">Telefono</label>
+                    <input type="radio" id="tele" name="contacto">
+                    <label for="corre">Correo</label>
+                    <input type="radio" id="corre" name="contacto">
+                </div>
+                
+                <p>Si eligio Telefono, elija la fecha y la hora</p>
+                <input type="date">
+                <label for="hora">Hora</label>
+                <input type="time" id="hora">
+            </fieldset>
+
+            <input type="submit" value="Enviar" class="boton boton-verde ">
+
+        </form>
+    </main>
+
+
+    <footer class="site-footer seccion">
+        <div class="contenedor contenedor-footer">
+            <nav class="navegacion">
+                <a href="nosotros.html">Nosotros</a>
+                <a href="anuncios.html">Anuncios</a>
+                <a href="blog.html">Blog</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        
+            <p class="copyright">Todos los derechos recervados 2020 &copy;</p>
+        </div>
+    </footer>
 </body>
 </html>
